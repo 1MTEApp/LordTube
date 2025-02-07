@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видеохостинг</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать на видеохостинг</h1>
+        <nav>
+            <a href="#" id="loginLink">Войти</a>
+            <a href="#" id="registerLink">Регистрация</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="videoSection">
+            <h2>Загруженные видео</h2>
+            <div id="videoList"></div>
+        </section>
+
+        <section id="uploadSection" class="hidden">
+            <h2>Загрузить видео</h2>
+            <form id="uploadForm">
+                <input type="file" id="videoFile" accept="video/*" required>
+                <button type="submit">Загрузить</button>
+            </form>
+        </section>
+
+        <section id="authSection" class="hidden">
+            <h2 id="authTitle">Вход / Регистрация</h2>
+            <form id="authForm">
+                <input type="email" id="authEmail" placeholder="Email" required>
+                <input type="password" id="authPassword" placeholder="Пароль" required>
+                <button type="submit" id="authButton">Войти</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Видеохостинг</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
